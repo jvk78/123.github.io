@@ -6,9 +6,9 @@ const video = document.getElementById('media__video');
 const play = document.getElementById('play__video');
 
 
-let tag = document.createElement('script'),
-    firstScriptTag = document.getElementsByTagName('script')[0],
-    player;
+// let tag = document.createElement('script'),
+//     firstScriptTag = document.getElementsByTagName('script')[0],
+//     player;
 
 
 
