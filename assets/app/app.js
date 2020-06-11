@@ -26,13 +26,11 @@ const play = document.getElementById('play__video');
 //   });
 // }
 // const onPlayerReady = (event) => {
-  play.addEventListener('click', () => {
-//     event.target.playVideo();
-    play.style.opacity = '0';
-    
-    setTimeout(() => {play.style.display = 'none'}, 500);
-    
-  })
+  unction playVideo() {
+  play.onclick = function() {
+       play.style.opacity = '0';
+    }
+}
 // }
 
 
