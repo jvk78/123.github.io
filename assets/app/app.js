@@ -9,14 +9,48 @@ const play = document.getElementById('play__video');
 //
 
 //
-function playVideo() {
+var tag = document.createElement('script'),
+    firstScriptTag = document.getElementsByTagName('script')[0],
+    player;
+
+
+tag.src = "https://www.youtube.com/iframe_api";
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('video', {
+    width: '560',
+    height: '315',
+    videoId: 'owvzQaJN1N8',
+    events: {'onReady': onPlayerReady}
+  });
+}
+function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+
+
+function startVideo() {
   play.onclick = function() {
        play.style.opacity = '0';
     setTimeout(function(){ play.style.display = 'none'; }, 500);
     }
 }
    
-playVideo();
+startVideo();
+
+
+
+
+// function playVideo() {
+//   play.onclick = function() {
+//        play.style.opacity = '0';
+//     setTimeout(function(){ play.style.display = 'none'; }, 500);
+//     }
+// }
+   
+// playVideo();
     
     
     
