@@ -32,7 +32,7 @@ playVideo();
 
 
 /* -=Create Map=- */
-var map;
+let map;
 
 function createMap() {
 DG.then(function () {
