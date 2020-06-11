@@ -9,15 +9,11 @@ const play = document.getElementById('play__video');
 //
 
 //
-
-
-
-
 function playVideo() {
   play.onclick = function() {
        play.style.opacity = '0';
-    setTimeout(function(){ play.style.display = 'none'; }, 500);
     }
+//  setTimeout(function(){play.style.display = 'none'}, 500);
 }
    
 playVideo();
