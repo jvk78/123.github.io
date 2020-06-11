@@ -4,63 +4,19 @@ const openMap = document.getElementById('open__map');
 const openMapSm = document.getElementById('open__map-small');
 const video = document.getElementById('media__video');
 const play = document.getElementById('play__video');
+//    console.log(1111)
 
+//
 
-// let tag = document.createElement('script'),
-//     firstScriptTag = document.getElementsByTagName('script')[0],
-//     player;
-
-
-
-
-/* -=Create Video=- */
-// tag.src = "https://www.youtube.com/iframe_api";
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// function onYouTubeIframeAPIReady() {
-//   player = new YT.Player('video', {
-//     width: '560',
-//     height: '315',
-//     videoId: 'owvzQaJN1N8',
-//     events: {'onReady': onPlayerReady}
-//   });
-// }
-// const onPlayerReady = (event) => {
-  
-
+//
 function playVideo() {
   play.onclick = function() {
        play.style.opacity = '0';
     }
-//   setTimeout(function(){play.style.display = 'none'}, 500);
+//  setTimeout(function(){play.style.display = 'none'}, 500);
 }
    
 playVideo();
-
-
-
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//const playVideo = () => {
-//  play.addEventListener('click', () => {
-//       play.style.opacity = '0';
-//    }
-//)}
-//   
-//playVideo();
     
     
     
