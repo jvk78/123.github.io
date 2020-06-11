@@ -14,26 +14,26 @@ let tag = document.createElement('script'),
 
 
 /* -=Create Video=- */
-tag.src = "https://www.youtube.com/iframe_api";
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// tag.src = "https://www.youtube.com/iframe_api";
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('video', {
-    width: '560',
-    height: '315',
-    videoId: 'owvzQaJN1N8',
-    events: {'onReady': onPlayerReady}
-  });
-}
-const onPlayerReady = (event) => {
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player('video', {
+//     width: '560',
+//     height: '315',
+//     videoId: 'owvzQaJN1N8',
+//     events: {'onReady': onPlayerReady}
+//   });
+// }
+// const onPlayerReady = (event) => {
   play.addEventListener('click', () => {
-    event.target.playVideo();
+//     event.target.playVideo();
     play.style.opacity = '0';
     
     setTimeout(() => {play.style.display = 'none'}, 500);
     
   })
-}
+// }
 
 
 
