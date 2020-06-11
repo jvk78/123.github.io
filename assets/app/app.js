@@ -9,11 +9,11 @@ const play = document.getElementById('play__video');
 //
 
 //
-function playVideo() {
-  play.onclick = function() {
+const playVideo = () => {
+  play.addEventListener('click', () => {
        play.style.opacity = '0';
     }
-}
+)}
    
 playVideo();
     
