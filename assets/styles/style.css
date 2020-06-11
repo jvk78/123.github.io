@@ -86,7 +86,7 @@ iframe {
   left: 0;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  background: #ff0000;
+  background: #000000;
 }
 /* Contacts */
 .contacts__wrapper {
@@ -196,7 +196,7 @@ iframe {
 }
 @media screen and (max-width: 1000px) {
   .video__wrapper {
-    width: 80%;
+    width: 70%;
     height: 43vw;
     background-color: #acffa1;
   }
@@ -206,7 +206,7 @@ iframe {
     display: none;
   }
   .video__wrapper {
-    width: 100%;
+    width: 95%;
     height: 55vw;
     background-color: #acffa1;
   }
